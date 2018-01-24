@@ -1,0 +1,108 @@
+﻿ <%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="childmasterFaculty.master.cs" Inherits="childmasterFaculty" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+
+        <asp:ContentPlaceHolder id="head3" runat="server">
+
+        
+        </asp:ContentPlaceHolder>
+       
+        <style type="text/css">
+            .style27
+            {
+                width: 261px;
+                 vertical-align:top;
+            }
+             .style45:hover
+            {
+                 background-color:Gray;
+                
+            }
+        </style>
+       
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+  
+    <asp:HoverMenuExtender ID="HoverMenuExtender1" runat="server" OffsetX="5" OffsetY="-15"  PopupPosition="Right" TargetControlID="LinkButton9" PopupControlID="Panel1">
+                </asp:HoverMenuExtender>
+                <asp:Panel ID="Panel1" runat="server"  BackColor="#EEEEEE" Height="80px" 
+                    style="text-align: left" Width="120px">
+                    
+                    <table style="width:100%; height:50%; background-color:#EEEEEE"  >
+                        <tr class="style45" style=" height:40px">
+                            <td   style="border:1px solid Black;" >
+                                &nbsp; &nbsp;<asp:LinkButton ID="HyperLink1" runat="server" Font-Size="Medium"  
+                                    Font-Bold="True" onclick="HyperLink1_Click"  >View</asp:LinkButton></td>
+                               
+                        </tr  >
+                        <tr class="style45" style=" height:40px">
+                            <td   style="border:1px solid Black;">
+                                &nbsp; &nbsp;<asp:LinkButton ID="HyperLink2" runat="server" Font-Size="Medium" 
+                                    Font-Bold="True" onclick="HyperLink2_Click"    >Update</asp:LinkButton>
+                            </td>
+                        </tr>
+                    </table>
+
+                </asp:Panel>
+    <table style="width: 100%;">
+        <tr>
+            <td class="style27"  valign="top">
+                <table style="width:100%; height: 526px; background-color:#B50D0D; margin-top:5px; vertical-align:top;">
+                   <tr>
+            <td style=" border:1px solid White;" >
+                
+                
+            &nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True" 
+                    Font-Size="Larger" ForeColor="White" onclick="LinkButton1_Click">HOME</asp:LinkButton>
+            </td>
+        </tr>
+                   
+                     <tr>
+            <td style=" border:1px solid White;" >
+                
+                
+            &nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton9" runat="server" Font-Bold="True" 
+                    Font-Size="Larger" ForeColor="White">PROFILE</asp:LinkButton>
+            </td>
+        </tr>
+        <tr>
+            <td style=" border:1px solid White;">
+            &nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton10" runat="server" Font-Bold="True" 
+                    Font-Size="Larger" ForeColor="White" onclick="LinkButton10_Click" >SECTION</asp:LinkButton>
+            </td>
+        </tr>
+        <tr>
+            <td style=" border:1px solid White;">
+                &nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton11" runat="server" Font-Bold="True" 
+                    Font-Size="Larger" ForeColor="White">NOTICE</asp:LinkButton>
+            </td>
+        </tr>
+        <tr>
+            <td style=" border:1px solid White;">
+                &nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton12" runat="server" Font-Bold="True" 
+                    Font-Size="Larger" ForeColor="White" onclick="LinkButton12_Click">RESET PASSWORD</asp:LinkButton>
+            </td>
+        </tr>
+                </table>
+&nbsp;</td>
+            <td>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        </table>
+    
+                
+    
+</asp:Content>
+

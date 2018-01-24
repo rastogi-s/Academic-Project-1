@@ -1,0 +1,275 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            font-size:2em;
+           
+            font-weight:normal;
+            font-weight:200;
+            color:White;
+        }
+                
+        .style11
+        {
+            color: Black;
+            text-align: center;
+            vertical-align: middle;
+            font-size: medium;
+            
+        }
+        .style12
+        {
+            height: 84px;
+            background-color:#B50D0D;
+            }
+        .style14
+        {
+            height: 550px;
+        }
+        .style23
+        {
+            height: 99px;
+            background-color:#B50D0D;
+            text-align: center;
+            color:White;
+            padding:10px 10px 10px 10px;
+        }
+        .style24
+        {
+            height: 55px;
+            text-align: center;
+            width: 95px;
+        }
+        .style25
+        {
+            height: 43px;
+            text-align: center;
+            width: 114px;
+        }
+        .style3
+        {
+            height: 55px;
+            text-align: center;
+            width: 152px;
+        }
+        .style200
+        {
+            height: 99px;
+            background-color:#B50D0D;
+            text-align: center;
+            color:White;
+            padding:10px 10px 10px 10px;
+        }
+        .style4:hover
+        {
+            background-color:Red;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    <Services>
+        <asp:ServiceReference Path="WebService.asmx" />
+    </Services>
+    </asp:ScriptManager>
+    
+    <div>
+        <table style="width: 100%; height: 850px;" bgcolor="White">
+            <tr>
+                <td class="style12"        
+                    style="text-align: center; font-size: x-large; font-family: Arial; color: white" 
+                    colspan="8">
+                    <span class="style2"><strong>ABC SCHOOL</strong></span><br />
+                    Ranchi</td>
+            </tr>
+            <tr>
+                
+                <td class="style24" align="center">
+                    </td>
+                
+                <td class="style3" align="center">
+                <asp:HoverMenuExtender ID="HoverMenuExtender1" runat="server" TargetControlID="LinkButton1"
+                     PopupControlID="PopupMenu"
+                     PopupPosition="Bottom"
+                     OffsetX="0"
+                     OffsetY="0"
+                     PopDelay="50"  HoverCssClass="style23" > </asp:HoverMenuExtender>
+                <asp:RoundedCornersExtender ID="RoundedCornersExtender1" runat="server"  Color="Blue" Radius="40" TargetControlID="LinkButton1"
+                 Corners="All">
+
+                    
+
+ </asp:RoundedCornersExtender>
+                  
+                    <asp:HyperLink ID="LinkButton1" runat="server"  CssClass="style11"    
+                        Font-Underline="false"  NavigateUrl="~/home_page.aspx" 
+                         >HOME</asp:HyperLink>
+                </td>
+                 <td class="style3">
+                <asp:HoverMenuExtender ID="HoverMenuExtender2" runat="server" TargetControlID="LinkButton2"
+                     PopupControlID="PopupMenu"
+                     PopupPosition="Bottom"
+                     OffsetX="0"
+                     OffsetY="0"
+                     PopDelay="50"  HoverCssClass="style23">
+
+                    
+
+ </asp:HoverMenuExtender>
+                <asp:RoundedCornersExtender ID="RoundedCornersExtender2" runat="server" Radius="40"  TargetControlID="LinkButton2"
+                 Corners="All">
+
+                    
+
+</asp:RoundedCornersExtender>
+
+                    <asp:HyperLink ID="LinkButton2" runat="server" Font-Underline="false"    
+                         CssClass="style11" NavigateUrl="~/About.aspx" >ABOUT US</asp:HyperLink>
+                </td>
+                <td class="style3">
+                <asp:HoverMenuExtender ID="HoverMenuExtender3" runat="server" TargetControlID="LinkButton3"
+                     PopupControlID="admission"
+                     PopupPosition="bottom"
+                     OffsetX="-8"
+                     OffsetY="2"
+                     PopDelay="50"  HoverCssClass="style23" >
+
+                    
+
+ </asp:HoverMenuExtender>
+                
+                <asp:RoundedCornersExtender ID="RoundedCornersExtender3" runat="server" Radius="40" TargetControlID="LinkButton3"
+                 Corners="All">
+
+                    
+
+ </asp:RoundedCornersExtender>
+                
+                    <asp:HyperLink ID="LinkButton3" runat="server" Font-Underline="false"  
+                        CssClass="style11"  NavigateUrl="~/Admission.aspx"  >ADMISSION</asp:HyperLink>
+                 
+                <asp:RoundedCornersExtender ID="RoundedCornersExtender4" runat="server" Radius="40" TargetControlID="LinkButton4"
+                 Corners="All">
+                    
+</asp:RoundedCornersExtender>
+                 <asp:HoverMenuExtender ID="HoverMenuExtender7" runat="server" TargetControlID="LinkButton7"
+                     PopupControlID="adm1"
+                     PopDelay="50"  HoverCssClass="style4"  >
+                     
+ </asp:HoverMenuExtender>
+                <asp:HoverMenuExtender ID="HoverMenuExtender8" runat="server" TargetControlID="LinkButton8"
+                     PopupControlID="adm1"
+                     PopDelay="50"  HoverCssClass="style4"  >
+                    
+ </asp:HoverMenuExtender>
+               
+                    <table  id="admission" style="background-color:#B50D0D; border:2px solid #F0F0F0; text-align:left; " >
+                        <tr>
+                            <td>
+                                <asp:HyperLink ID="LinkButton7" runat="server"   NavigateUrl=""
+             Font-Underline="false" Text="Download pdf form"  ForeColor="White" CssClass="style25"  />
+                            </td>
+                        </tr>
+                        <tr style="border-top:2px solid black; border-collapse:separate;">
+                            <td>
+                            <asp:HyperLink ID="LinkButton8" runat="server" 
+             Font-Underline="false" Text="Online Form" ForeColor="White" 
+                                    CssClass="style25"  NavigateUrl="~/onlineAdmissionRequestform.aspx" />   
+                            </td>
+                        </tr>
+                        </table>
+                
+                
+                
+                </td>
+
+                <td class="style3">
+                <asp:HoverMenuExtender ID="HoverMenuExtender4" runat="server" TargetControlID="LinkButton4"
+                     PopupControlID="alumni"
+                     PopupPosition="Bottom"
+                     OffsetX="0"
+                     OffsetY="0"
+                     PopDelay="50"  HoverCssClass="style23">
+
+                    
+
+ </asp:HoverMenuExtender>
+
+                    <asp:HyperLink ID="LinkButton4" runat="server" Font-Underline="false"  CssClass="style11"   NavigateUrl="">ALUMNI</asp:HyperLink>
+                </td>
+                <td class="style3">
+                <asp:HoverMenuExtender ID="HoverMenuExtender5" runat="server" TargetControlID="LinkButton5"
+                     PopupControlID="PopupMenu"
+                     PopupPosition="Bottom"
+                     OffsetX="0"
+                     OffsetY="0"
+                     PopDelay="50"  HoverCssClass="style23">
+
+                    
+
+ </asp:HoverMenuExtender>
+                <asp:RoundedCornersExtender ID="RoundedCornersExtender5" runat="server" Radius="40" TargetControlID="LinkButton5" Corners="All">
+
+                    
+
+ </asp:RoundedCornersExtender>
+
+                    <asp:HyperLink ID="LinkButton5" runat="server" Font-Underline="false"  
+                        CssClass="style11" NavigateUrl="~/Contact_us.aspx" >CONTACT US</asp:HyperLink>
+                </td>
+                <td class="style3">
+                <asp:HoverMenuExtender ID="HoverMenuExtender6" runat="server" TargetControlID="LinkButton6"
+                     PopupControlID="PopupMenu"
+                     PopupPosition="Bottom"
+                     OffsetX="0"
+                     OffsetY="0"
+                     PopDelay="50"  HoverCssClass="style23" >
+
+                    
+
+</asp:HoverMenuExtender>
+                <asp:RoundedCornersExtender ID="RoundedCornersExtender6" runat="server" Radius="40" TargetControlID="LinkButton6"
+                 Corners="All">
+
+                    
+
+ </asp:RoundedCornersExtender>
+
+                    <asp:LinkButton ID="LinkButton6" runat="server" Font-Underline="false" 
+                        CssClass="style11"   OnClick="LinkButton6_Click"  >LOGIN</asp:LinkButton>
+                </td>
+                <td class="style24">
+                    </td>
+            </tr>
+            <tr>
+                <td class="style14" colspan="8">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                    </td>
+            </tr>
+            <tr>
+                <td colspan="8"  class="style23"  >
+                    The site has been visited :<asp:Label ID="Label1" runat="server"></asp:Label>
+&nbsp;&nbsp;
+                    <br />
+                    Copyright @ 2013 Shubham Hall&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    Powered by Anirban Buzz<br />
+                    </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

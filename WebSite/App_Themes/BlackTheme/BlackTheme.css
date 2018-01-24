@@ -1,0 +1,163 @@
+﻿
+        #dhtmltooltip{
+        font-family: Arial;
+        font-size: 10px;
+        position: absolute;
+        left: -300px;
+        width: 150px;
+        border: 1px solid #ffffff;
+        padding: 2px;
+        background-color: #ffffff;
+        visibility: hidden;
+        z-index: 100;
+        /*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+        /*filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);*/
+        }
+
+        #dhtmlpointer{
+        position:absolute;
+        left: -300px;
+        z-index: 101;
+        visibility: hidden;
+        }
+
+    body {
+    color:#fff;
+    background:#ffffff url(/SourceCode/App_Themes/BlackTheme/images/bg.gif) repeat-y center;
+    scrollbar-arrow-color:#CCC;
+    scrollbar-3dlight-color:#111;
+    scrollbar-highlight-color:#666;
+    scrollbar-face-color:#444;
+    scrollbar-shadow-color:#191919;
+    scrollbar-track-color:#111;
+    scrollbar-darkshadow-color: #191919
+    }
+    
+	#main_div {
+		text-align: center; /* be nice to IE5 */
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		}
+		
+	#main_div p {
+		text-align: left; /* be nice to IE5 */
+		vertical-align:top;
+		width: 760px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:0px;
+		}
+		
+	#main_div span 
+	{
+		display: block;
+		margin: 0px 0px 0px 0px;
+	}
+
+/* Nav for Gallery */	
+#navlist_a {
+  list-style-type:none; 
+  padding:0; 
+  width:47.5em; 
+  height:1em; 
+  margin:0 auto;
+  }
+#navlist_a li {
+  display:block; 
+  width:1em; 
+  height:1em; 
+  float:left; 
+  margin-right:0.2em;
+  }
+#navlist_a a {
+  display:block; 
+  width:0.5em; 
+  height:1em; 
+  position:relative; 
+  text-decoration:none;
+  }
+#navlist_a a em {
+  display:block; 
+  font-style:normal; 
+  width:1em; 
+  height:1em; 
+  color:#000; 
+  border-top:1em solid #c00; 
+  position:absolute; 
+  top:0; 
+  left:0; 
+  cursor:pointer;
+  }
+#navlist_a a:hover {
+  color:#c00;
+  }
+#navlist_a a:hover em {
+  border-top:0.5em solid #c00;
+  }
+
+/* Nav for Photos */
+#navlist_b {
+  list-style-type:none; 
+  padding:0; 
+  width:47.5em; 
+  height:1em; 
+  margin:0 auto;
+  position:relative;
+  top:7px;
+  }
+#navlist_b li {
+  display:block; 
+  width:0.5em; 
+  height:1em; 
+  float:left; 
+  margin-right:0.2em;
+  }
+#navlist_b a {
+  display:block; 
+  width:0.5em; 
+  height:1em; 
+  position:relative; 
+  text-decoration:none;
+  }
+#navlist_b a em {
+  display:block; 
+  font-style:normal; 
+  width:0.5em; 
+  height:1em; 
+  color:#000; 
+  border-top:0.5em solid #ccccff; 
+  position:absolute; 
+  top:0; 
+  left:0; 
+  cursor:pointer;
+  }
+#navlist_b a:hover {
+  color:#c00;
+  }
+#navlist_b a:hover em {
+  border-top:0.5em solid #c00;
+  }
+
+.SubHeadingWhite
+{
+    font-family: 'Arial Black';
+    font-variant: small-caps;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+.SubTitleWhite
+{
+    font-family: 'Arial';
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+a.lnkWhite
+{
+    font-family: 'Arial';
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-decoration:none;
+    color:White;
+}
